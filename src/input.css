@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .custom_class::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color: #60679f;
+        width: 1px;
+        height: 100%;
+    }
+}
